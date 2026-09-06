@@ -1,9 +1,0 @@
-Letakkan file musik latar Anda di folder ini dengan nama persis:
-
-    music.mp3
-
-Format yang didukung: MP3 (disarankan), durasi 2-4 menit sudah cukup
-karena musik akan diulang (loop) otomatis. Gunakan lagu instrumental
-yang bebas hak cipta / berlisensi (misalnya dari YouTube Audio Library,
-Pixabay Music, atau lagu yang memang sudah Anda beli lisensinya) agar
-undangan tidak melanggar hak cipta saat dibagikan secara publik.
