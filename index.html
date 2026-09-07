@@ -170,25 +170,23 @@
 
     <div class="bank-card">
       <div class="bank-head">
-        <span class="bank-badge">BCA</span>
-        <span class="bank-fullname">Bank Central Asia</span>
+        <span class="bank-badge bank-bca">BCA</span>
       </div>
       <p class="bank-owner">a.n. I Kadek Indra Laksmana</p>
       <div class="bank-number-row">
         <span class="bank-number" id="bca-number">6110339478</span>
-        <button class="btn-copy" data-copy-target="bca-number" data-account="6110339478 a.n. I Kadek Indra Laksmana (BCA)">Salin</button>
+        <button class="btn-copy" data-copy-target="bca-number" data-account="6110339478">Salin</button>
       </div>
     </div>
 
     <div class="bank-card">
       <div class="bank-head">
-        <span class="bank-badge">BNI</span>
-        <span class="bank-fullname">Bank Negara Indonesia</span>
+        <span class="bank-badge bank-bni">BNI</span>
       </div>
       <p class="bank-owner">a.n. Ni Nengah Putri Adnyani</p>
       <div class="bank-number-row">
         <span class="bank-number" id="bni-number">0150345465</span>
-        <button class="btn-copy" data-copy-target="bni-number" data-account="0150345465 a.n. Ni Nengah Putri Adnyani (BNI)">Salin</button>
+        <button class="btn-copy" data-copy-target="bni-number" data-account="0150345465">Salin</button>
       </div>
     </div>
     <p class="copy-toast" id="copy-toast" role="status" aria-live="polite"></p>
@@ -203,19 +201,36 @@
     </div>
   </section>
 
-  <!-- BUKU TAMU -->
+  <!-- BUKU TAMU (Google Form) -->
   <section class="section" id="tamu">
     <h3 class="section-title">Buku Tamu</h3>
     <div class="section-underline" aria-hidden="true"><span></span></div>
     <p class="guestbook-caption">Berikan doa dan ucapan terbaik Anda untuk kedua mempelai.</p>
 
-    <form id="guestbook-form" class="guestbook-form">
-      <input type="text" id="gb-name" placeholder="Nama Anda" required maxlength="60" />
-      <textarea id="gb-message" rows="3" placeholder="Tulis doa &amp; ucapan Anda di sini..." required maxlength="300"></textarea>
-      <button type="submit" class="btn-send">Kirim Ucapan</button>
-    </form>
+    <!--
+      GANTI src di bawah ini dengan LINK EMBED Google Form Anda sendiri.
+      Cara mendapatkannya ada di README.md bagian "Buku Tamu (Google Form)".
+      Contoh format link embed: https://docs.google.com/forms/d/e/XXXXXXXXXXXXXXXX/viewform?embedded=true
+    -->
+    <div class="guestbook-embed">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSf8OgN0zlshe2cGwNlmIFaVXsSX2sXnVcGYDmJ6WGN4-xKOHw/viewform?embedded=true"
+        title="Formulir Buku Tamu"
+        loading="lazy">
+        Memuat formulir…
+      </iframe>
+    </div>
 
-    <div class="guestbook-list" id="guestbook-list"></div>
+    <!--
+      GANTI href di bawah ini dengan LINK RINGKASAN JAWABAN (viewanalytics) dari
+      Google Form Anda, agar tamu lain juga bisa membaca ucapan-ucapan yang masuk.
+      Cara mendapatkannya juga ada di README.md.
+    -->
+    <a class="btn-view-responses" id="view-responses-link"
+       href="https://docs.google.com/forms/d/e/1Rumb1Y1YvIvtezoVrwCfAB3ZlxOCPyyBIn0KU728-OM/viewanalytics"
+       target="_blank" rel="noopener">
+      Lihat Ucapan dari Tamu Lain
+    </a>
   </section>
 
   <!-- PENUTUP -->
